@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .top {
+            display: flex;
+            align-items: center;
+            margin: 30px 0;
+            padding: 10px;
+            /* border: 2px solid blueviolet; */
+            width: 95%;
+            margin: 0 auto;
+        }
+
+        .logo {
+            width: 15%;
+        }
+
+        .youtube {
+            width: 100%;
+        }
+
+        .search {
+            width: 70%;
+            height: 50px;
+            background-color: white;
+            font-size: 20px;
+            color: gray;
+            border: 2px solid darkgray;
+            border-radius: 40px;
+            padding: 9px;
+            padding-left: 20px;
+        }
+
+        .video {
+            width: 100%;
+            height: 500px;
+            border-radius: 10px;
+        }
+
+        iframe {
+            width: 100%;
+            height: 210px;
+            border-radius: 10px;
+        }
+
+        .container {
+            display: flex;
+            padding-top: 20px;
+            justify-content: space-evenly;
+        }
+
+        .first {
+            width: 60%;
+            font-size: 18px;
+            margin: 10px;
+        }
+
+        .second {
+            width: 30%;
+            margin: 10px;
+        }
+
+        .text {
+            font-size: 15px;
+            color: gray;
+        }
+
+        .person {
+            display: flex;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .person>img {
+            width: 70px;
+        }
+
+        .person:hover {
+            cursor: pointer;
+        }
+
+        .sub {
+            font-size: 15px;
+            background-color: red;
+            margin-left: 50px;
+            border-radius: 5px;
+            padding: 5px;
+        }
+
+        .sub:hover {
+            cursor: pointer;
+        }
+
+        .sub:active {
+            background-color: rgb(155, 155, 155);
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="top">
+        <div class="logo">
+            <img class="youtube" src="./캡처1.PNG">
+        </div>
+        <input class="search" type="text" placeholder="검색">
+
+    </div>
+
+    <div class="container">
+        <div class="first">
+            <iframe class="video" src="https://www.youtube.com/embed/0_gRF8iiWB0?si=U-_3tBsR8-uNuGl5"
+                frameborder="0"></iframe>
+
+            <div>BTOB (비투비) - Friend Lyrics (Color Coded/ENG/ROM/HAN/PTBR)</div>
+            <div class="text">2010. 11. 22</div>
+
+            <div class="person">
+                <img src="./이름.PNG">
+                <div>BTOB</div>
+                <div class="sub">구독</div>
+            </div>
+        </div>
+
+        <div class="second">
+            <iframe src="https://www.youtube.com/embed/Pp07icnTPGE?si=hpPHSOghUHhKCSjO" frameborder="0"></iframe>
+            <div>NewJeans (뉴진스) 'Hype Boy (하입보이)' 가사 (Color Coded Lyrics)</div>
+            <br>
+            <iframe src="https://www.youtube.com/embed/O-6ROMS0ABk?si=EFZ5W3Wiw2nIR2F5" frameborder="0"></iframe>
+            <div>BTOB Wind And Wish Lyrics (비투비 나의 바람 가사) (Color Coded Lyrics)</div>
+            <br>
+            <iframe src="https://www.youtube.com/embed/1kfmWl3o8TE?si=A_FEM4eY548YZRRq" frameborder="0"></iframe>
+            <div>aespa Spicy Lyrics (에스파 스파이시 가사) (Color Coded Lyrics)</div>
+        </div>
+    </div>
+</body>
+
+</html>
